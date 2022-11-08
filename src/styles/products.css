@@ -94,8 +94,8 @@ section.products{
     .prod-wrapper{
         grid-template-columns: auto auto auto auto auto;
     }
-    .prod-wrapper div.prod:nth-last-child(-n+2){
-        display: block;
+    .prod-wrapper div.prod:nth-last-child(-n+1){
+        display: flex;
     }
 }
 @media (min-width: 1080px){
@@ -103,7 +103,7 @@ section.products{
         grid-template-columns: auto auto auto auto auto auto;
     }
     .prod-wrapper div.prod:nth-last-child(-n+2){
-        display: block;
+        display: flex;
     }
 }
 
