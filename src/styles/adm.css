@@ -139,6 +139,11 @@ main .icons-prod-wrapper{
     .title-section{
         max-width: 500px;
     }
+    .title-section > button{
+        width: 151px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 720px){

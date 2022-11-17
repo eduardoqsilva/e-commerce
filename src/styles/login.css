@@ -1,0 +1,69 @@
+main{
+    height: calc(100vh - 488px);
+    background-color: #F5F5F5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form{
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.login-form input{
+    width: 100%;
+    max-width: 423px;
+    height: 73px;
+    border: none;
+    outline: none;
+
+    padding: 1rem 12px;
+    border-radius: 4px;
+
+    -webkit-box-shadow: 0px 6px 2px -3px rgba(0, 0, 0, 0.202);
+    -moz-box-shadow: 0px 6px 2px -3px rgba(0,0,0,0.202);
+    box-shadow: 0px 6px 2px -3px rgba(0, 0, 0, 0.202);
+}
+.login-form input::placeholder{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #A2A2A2;
+}
+.login-form legend{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: var(--text-color);
+}
+.login-form button{
+    width: 100%;
+    max-width: 423px;
+    height: 62px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+

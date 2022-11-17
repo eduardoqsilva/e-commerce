@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="src/images/svgs/favicon.svg" type="image/x-icon">
+
+     <!-- styles css  -->
+     <link rel="stylesheet" href="src/styles/header.css">
+     <link rel="stylesheet" href="src/styles/footer.css">
+     <link rel="stylesheet" href="src/styles/login.css">
+
+    <title>Login</title>
+</head>
+<body>
+        <header>
+            <nav>
+                <a href="index.html"><img class="logo" src="src/images/svgs/logo.svg" alt="logo"></a>
+
+                <div class="btn">
+                    <button class="button-login" style="visibility: hidden;">
+                        Login
+                    </button>
+                </div>
+
+                <div class="search">
+                    <input placeholder="O que deseja encontrar?" type="text"> 
+                    <img class="search-ico" src="src/images/svgs/search.svg" alt="buscar">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <form class="login-form">
+                <legend>Iniciar Sessão</legend>
+                <input type="email" placeholder="Escreva seu email">
+                <input type="password" placeholder="Escreva sua senha">
+                <button onclick="window.location.href = '/adm.html'">Entrar</button>
+            </form>
+        </main>
+        <footer style="margin-top: 0;">
+            <div class="logo-footer-wrapper">
+                <img class="footer-logo" src="src/images/svgs/logo.svg" alt="logo">
+            </div>
+            <div class="footer-wrapper">
+                <ul class="footer-links">
+                    <a href="#">
+                        <li>Quem somos nós</li>
+                    </a><a href="#">
+                        <li>Política de privacidade</li>
+                    </a><a href="#">
+                        <li>Programa fidelidade</li>
+                    </a><a href="#">
+                        <li>Nossas lojas</li>
+                    </a><a href="#">
+                        <li>Quero ser franqueado</li>
+                    </a><a href="#">
+                        <li>Anuncie aqui</li>
+                    </a>
+                </ul>
+                    <form class="footer-form">
+                        <legend>Fale conosco</legend>
+                        <input placeholder="nome" type="text">
+                        <textarea placeholder="Escreva sua mensagem" name="msg" id="msg" cols="30" rows="10"></textarea>
+                        <button>Enviar mensagem</button>
+                    </form>
+            </div>
+    
+    
+            <div class="footer-copy">
+                <p>Desenvolvido por Eduardo Q 2022</p>
+            </div>
+        </footer>
+        <script>
+            var form = document.querySelector('form ')
+            form.addEventListener('submit', function(e){
+                e.preventDefault()
+            })
+        </script>
+</body>
+</html>
